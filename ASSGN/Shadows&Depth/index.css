@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  text-align: center;
+  padding: 40px;
+  background: #f9f9f9;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 220px;
+  transition: all 0.3s ease;
+}
+
+.light-shadow { box-shadow: 2px 2px 6px rgba(0,0,0,0.2); }
+.medium-shadow { box-shadow: 4px 4px 10px rgba(0,0,0,0.3); }
+.strong-shadow { box-shadow: 6px 6px 15px rgba(0,0,0,0.4); }
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.5);
+}
