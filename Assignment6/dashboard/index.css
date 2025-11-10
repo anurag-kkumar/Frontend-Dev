@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-gap: 20px;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+header {
+  grid-column: span 2;
+  background: red;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.sidebar {
+  background: #eee;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: #333;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.box {
+  background: white;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
