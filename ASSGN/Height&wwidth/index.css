@@ -1,0 +1,44 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  text-align: center;
+  overflow: hidden; 
+}
+
+.px-box {
+  width: 200px;
+  height: 100px;
+  background: #42a5f5;
+}
+
+.percent-box {
+  width: 40%;
+  min-height: 120px;
+  max-width: 300px;
+  background: #66bb6a;
+}
+
+.vh-box {
+  width: 50vw;
+  height: 20vh;
+  background: #ef5350;
+}
