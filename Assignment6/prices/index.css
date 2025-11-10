@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  animation: fadeIn 1s ease-in;
+}
+
+.card {
+  background: white;
+  padding: 40px 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  width: 200px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.highlight {
+  background: #2196f3;
+  color: white;
+  transform: scale(1.1);
+}
+
