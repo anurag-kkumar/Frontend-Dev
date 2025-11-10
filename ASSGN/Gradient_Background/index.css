@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+header, footer {
+  position: fixed;
+  width: 100%;
+  background: #212121;
+  padding: 15px;
+  left: 0;
+  color: white;
+}
+
+header { top: 0; }
+footer { bottom: 0; }
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.linear {
+  background: linear-gradient(135deg, #2196f3, #e91e63);
+  background-attachment: fixed;
+}
+.radial {
+  background: radial-gradient(circle, #8bc34a, #388e3c);
+}
