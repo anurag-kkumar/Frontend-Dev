@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 40px;
+  animation: fadeIn 1.2s ease-in;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.card:hover img {
+  filter: none;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
