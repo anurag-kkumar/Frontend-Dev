@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>simple counter app</h1>
+    <p id="cont"></p>
+    <div>
+        <button onclick="dec()">dec -ve</button>
+        <button onclick="inc()">inc +ve</button>
+        <button onclick="reset()">reset</button>
+    </div>
+    <script
+    >
+    const nums=document.getElementById("cont");
+    var ans=0;
+    nums.textContent=0;
+    function reset(){
+        console.log(ans)
+        ans=0;
+        nums.textContent=ans;
+        console.log(ans)
+    }
+   function dec(){
+    ans=ans-1;
+        if(ans<0){
+
+            reset();
+            return;
+        }
+        
+        nums.textContent=ans;
+   }
+   function inc(){
+    ans=ans+1;
+    nums.textContent=ans;
+   }
+    
+</script>
+</body>
+</html>
