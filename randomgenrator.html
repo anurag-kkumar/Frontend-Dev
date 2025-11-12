@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Random Number Generator </h1>
+    <p id="num"></p>
+    <button onclick="gen()" >Generator</button>
+    <h1>simple counter app</h1>
+    <p id="cont"></p>
+    <div>
+        <button onclick="dec()">dec -ve</button>
+        <button onclick="inc()">inc +ve</button>
+        <button onclick="reset">reset</button>
+    </div>
+    <script
+    >
+    var result=0;
+    
+    const nums=document.getElementById("num");
+    nums.textContent=0;
+    function gen(){
+        let temp =Math.random();
+        result=100*temp;
+        nums.textContent=Math.floor(result);
+    }
+    
+</script>
+</body>
+</html>
