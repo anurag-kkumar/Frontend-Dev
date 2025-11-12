@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>simple counter app</h1>
+    <div style="display: flex ;flex-direction: row;  justify-content: center ; align-content: center; font-size: xx-large;">
+       <div id="hr">11 </div> <span>:</span>
+        <div id="min">24 </div><span>:</span>
+        <div id="sec">20</div>
+   </div>
+    
+    <script
+    >
+    const hours=document.getElementById("hr");
+    const minuent=document.getElementById("min");
+    const seceond=document.getElementById("sec");
+    let s=0;
+    let m=25;
+    let hr=11;
+
+    setInterval(() => {
+        s++;
+        
+        if(s==60){
+            m++;
+            s=0;
+            
+        }
+        if(m==60){
+            hr++;
+            m=0;
+
+           
+        }
+        seceond.textContent = s;
+        minuent.textContent=m;
+         hours.textContent=hr
+    },1000);
+    
+
+    
+</script>
+</body>
+</html>
