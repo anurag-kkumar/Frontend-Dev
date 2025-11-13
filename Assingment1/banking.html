@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Banking Interest Calculator</title>
+</head>
+<body>
+  <h2> Calculator</h2>
+  <p>Final Balance after 5 years:-</p>
+    <p id="totalBala"></p>
+  <script>
+     let accountType = "fixed"; 
+    let a = 120000;
+    let years = 5;
+
+        let rate = 0;
+
+    if (accountType === "savings") {
+      rate = 4;
+} else if (accountType === "fixed") {
+      rate = 6.5;
+    }
+
+    if (a > 100000) {
+      rate += 1;
+    }
+    const totals=document.getElementById("totalBala");
+    let total = a * Math.pow((1 + rate / 100), years);
+    totals.textContent= total;
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cinema Ticketing System</title>
+</head>
+<body>
+  <h2>Cinema Ticketing System</h2>
+  <p id="total"></p>
+  <p id="discount"></p>
+  <p id="finalamt"></p>
+
+  <script>
+    let showTime = "evening"; 
+    let numTickets = 4;
+    let isStudent = false;
+    let age = 65;
+
+    let basePrice = showTime === "morning" ? 120 : 180;
+    let totalBase = basePrice * numTickets;
+
+    let discount = 0;
+
+    if (isStudent) {
+      discount = 0.10;
+    } else if (age > 60) {
+      discount = 0.20;
+    }
+    const d=document.getElementById("total");
+    const s=document.getElementById("discount");
+    const f=document.getElementById("finalamt");
+
+    let discountedTotal = totalBase * (1 - discount);
+    let serviceFee = numTickets > 3 ? 50 : 0;
+    let finalAmount = discountedTotal + serviceFee;
+
+    s.textContent=totalBase 
+ d.textContent=discountedTotal
+ f.textContent=finalAmount
+  </script>
+</body>
+</html>

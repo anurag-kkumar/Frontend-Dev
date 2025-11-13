@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marks Analyzer</title>
+</head>
+<body>
+  <h2>Marks Analyzer</h2>
+  <script>
+    let marks = [95, 82, 67, 38, 40];
+    let total = 0;
+    let failedSubjects = 0;
+
+    for (let i = 0; i < marks.length; i++) {
+      total += marks[i];
+      if (marks[i] < 40) failedSubjects++;
+    }
+
+    let average = total / marks.length;
+    let percentage = average;
+    let grade = "";
+
+    if (percentage >= 90) grade = "A+";
+    else if (percentage >= 75) grade = "A";
+    else if (percentage >= 60) grade = "B";
+    else if (percentage >= 40) grade = "C";
+    else grade = "Fail";
+
+    document.write("<p><strong>Average Marks:</strong> " + average.toFixed(2) + "</p>");
+    document.write("<p><strong>Percentage:</strong> " + percentage.toFixed(2) + "%</p>");
+    document.write("<p><strong>Grade:</strong> " + grade + "</p>");
+
+    if (failedSubjects >= 2) {
+      document.write("<p><strong>Result:</strong> Repeat Year</p>");
+    } else {
+      document.write("<p><strong>Result:</strong> Pass</p>");
+    }
+  </script>
+</body>
+</html>

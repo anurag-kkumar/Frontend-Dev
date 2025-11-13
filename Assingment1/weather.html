@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Alert System</title>
+</head>
+<body>
+  <h2>Weather Alert System</h2>
+  <script>
+    let temperature = 37;
+    let humidity = 75;
+    let windSpeed = 20;
+
+    if (temperature > 35 && humidity > 70) {
+      document.write("<p><strong>Alert:</strong> Cancel - Heat Alert.</p>");
+    } else if (temperature < 10 || windSpeed > 40) {
+      document.write("<p><strong>Alert:</strong> Cancel - Cold/Windy Alert.</p>");
+    } else {
+      document.write("<p><strong>Status:</strong> Event Approved.</p>");
+    }
+
+    if (temperature < 20) {
+      document.write("<p>Advice: Wear Jacket</p>");
+    } else if (temperature <= 30) {
+      document.write("<p>Advice: Comfortable</p>");
+    } else {
+      document.write("<p>Advice: Stay Hydrated</p>");
+    }
+  </script>
+</body>
+</html>

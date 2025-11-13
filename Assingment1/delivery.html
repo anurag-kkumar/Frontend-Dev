@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-Commerce r</title>
+</head>
+<body>
+  <h2>E-Commerce </h2>
+  <p>total price :</p>
+  <p id="total" ></p>
+  <script>
+    let order = 450;
+    let priminum= false;
+    let isRemote = true;
+
+    let fee = 0;
+    let Days = 3;
+
+    if (!priminum && order < 500) {
+      fee = 50;
+    }
+
+    if (isRemote) {
+      Days += 2;
+    }
+    const totalprice=document.getElementById("total");
+    let total = order + fee;
+        totalprice.textContent=total;
+  </script>
+</body>
+</html>
