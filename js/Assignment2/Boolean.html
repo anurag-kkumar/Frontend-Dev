@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Q5 Output</h3>
+<script>
+function checkAccess(isDoorLocked, isWindowClosed, isAlarmOn, isOwnerInside) {
+    let secure = isAlarmOn && isDoorLocked && isWindowClosed && isOwnerInside;
+    console.log(secure ? "Secure" : "Unsafe");
+}
+
+checkAccess(true, true, true, true);
+checkAccess(true, false, true, true);
+checkAccess(false, true, true, false);
+</script>
+
+</body>
+</html>

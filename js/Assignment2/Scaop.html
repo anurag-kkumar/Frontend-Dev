@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Q1 Output</h3>
+<script>
+let bonus = 5000;
+
+function calculateSalary(isPermanent) {
+    let salary = 40000;
+    if (isPermanent) salary += bonus;
+    console.log("Is Permanent:", isPermanent);
+    console.log("Total Salary:", salary);
+}
+
+calculateSalary(true);
+calculateSalary(false);
+console.log("Global bonus =", bonus);
+</script>
+
+</body>
+</html>
