@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Assignment</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+    <h2>Q1. Dynamic Product List Manager</h2>
+    <div class="section">
+        <input type="text" id="productInput" placeholder="Enter product name">
+        <button id="addProductBtn">Add Product</button>
+
+        <ul id="productList"></ul>
+    </div>
+
+    <h2>Q2. Live Character Counter</h2>
+    <div class="section">
+        <textarea id="textArea" maxlength="100"></textarea>
+        <p id="charCounter">100 characters left</p>
+        <button id="resetBtn">Reset</button>
+    </div>
+
+    <h2>Q3. Multi-Step Form</h2>
+    <div class="section">
+        <form id="multiForm">
+
+            <div class="step" id="step1">
+                <label>Name:</label>
+                <input type="text" id="nameInput">
+                <button type="button" id="next1">Next</button>
+            </div>
+
+            <div class="step" id="step2" style="display:none;">
+                <label>Email:</label>
+                <input type="email" id="emailInput">
+                <button type="button" id="back1">Back</button>
+                <button type="button" id="next2">Next</button>
+            </div>
+
+            <div class="step" id="step3" style="display:none;">
+                <label>Password:</label>
+                <input type="password" id="passwordInput">
+                <button type="button" id="back2">Back</button>
+                <button type="button" id="finishBtn">Finish</button>
+            </div>
+        </form>
+
+        <div id="summary" style="display:none;"></div>
+    </div>
+
+    <script src="./q1.js"></script>
+    <script src="./q2.js"></script>
+    <script src="./q3.js"></script>
+
+</body>
+</html>
