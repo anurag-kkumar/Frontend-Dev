@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./index.js"></script>
+
+    <style>
+        .product { padding: 10px; border: 1px solid #ccc; margin-bottom: 10px; }
+        .highlight { background-color: #ffffa5; }
+        .extra-details { display: none; }
+        .selected { color: red; }
+        [data-discount="true"] { border-color: green; }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Available Products</h1>
+
+        <section class="product" data-stock="yes" data-discount="true">
+            Laptop <span class="fav">❤️</span>
+            <div class="extra-details">Powerful laptop with 16GB RAM</div>
+        </section>
+
+        <section class="product" data-stock="no">
+            Smartphone <span class="fav">❤️</span>
+            <div class="extra-details">Out of stock premium smartphone</div>
+        </section>
+
+        <section class="product" data-stock="yes" data-discount="true">
+            Headphones <span class="fav">❤️</span>
+            <div class="extra-details">Noise-cancelling technology</div>
+        </section>
+
+        <section class="product" data-stock="yes">
+            Keyboard <span class="fav">❤️</span>
+            <div class="extra-details">Mechanical keys</div>
+        </section>
+
+        <section class="product" data-stock="no">
+            Gaming Mouse <span class="fav">❤️</span>
+            <div class="extra-details">High DPI mouse</div>
+        </section>
+    </main>
+</body>
+</html>
